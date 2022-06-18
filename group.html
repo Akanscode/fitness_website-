@@ -76,10 +76,10 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div id="navbar-collapse" class="flex-col hidden mt-3 md:flex md:flex-row md:ml-auto md:mt-0 md:hidden">
+      <div id="navbar-collapse" class="flex-col hidden mt-3 md:flex-row md:ml-auto md:mt-0 md:hidden">
         <div class="relative mr-3 text-gray-700 hover:text-gray-900" x-data="{ open: false }">
           <a href="#" @click="open = true" style="text-transform: inherit"
-            class="flex items-center justify-between block px-4 py-2 text-sm hover:bg-gray-200">
+            class="flex items-center justify-between  px-4 py-2 text-sm hover:bg-gray-200">
             Classes
             <svg class="h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -409,12 +409,9 @@
       </div>
 
       <!--==== pagination =====-->
-      <div class="relative inline-flex shadow-sm mt-6 md:mt-10 -space-x-px" aria-label="Pagination">
+      <div class="relative inline-flex overflow-hidden shadow-sm mt-6 md:mt-10 -space-x-px " aria-label="Pagination">
 
-        <a href="#"
-          class="relative inline-flex items-center px-2 py-3 rounded-l-md border border-purple-700 bg-slate-100 text-sm font-medium text-purple-900 hover:bg-gray-50">
-          <i class="fa fa-angle-double-left px-2"></i>
-        </a>
+
         <a href="#"
           class="relative inline-flex items-center px-4 py-3 border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
           <i class="fa fa-angle-left"></i>
@@ -435,14 +432,8 @@
           class="relative inline-flex items-center px-4 py-3 border border-gray-200 bg-white text-sm font-medium text-gray-700">
           ...
         </span>
-        <a href="#"
-          class="hidden md:inline-flex relative items-center px-4 py-3 border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
-          8
-        </a>
-        <a href="#"
-          class="relative inline-flex items-center px-4 py-3 border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
-          9
-        </a>
+
+
         <a href="#"
           class="relative inline-flex items-center px-4 py-3 border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
           10
@@ -451,11 +442,7 @@
           class="relative inline-flex items-center px-4 py-3 border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
           <i class="fa fa-angle-right"></i>
         </a>
-        <a href="#"
-          class="relative inline-flex items-center px-2 py-3 rounded-r-md border border-gray-200 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
 
-          <i class="fa fa-angle-double-right px-2"></i>
-        </a>
       </div>
     </div>
   </section>
