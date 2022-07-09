@@ -1,37 +1,3 @@
-//tab
-
-const tabs = document.querySelectorAll(".tab");
-const tabBtns = document.querySelectorAll(".tabbtn");
-const tabContents = document.querySelectorAll("#tabContents");
-
-// each tab button will have a  click event  listener
-tabBtns.forEach((tabBtn) => {
-  tabBtn.addEventListener("click", () => {
-    // hiding all tabs
-    tabs.forEach((tabContents) => {
-      tabContents.classList.add("hidden");
-    });
-
-    // showing only the tab that this tab button should show
-    const tabContents = tabBtn.getAttribute("data-tabopen");
-
-    tabs.forEach((tabContents) => {
-      tabContents.classList.remove("hidden");
-    });
-
-    //document.getElementById(tabContents).classList.remove("hidden");
-    // document.getElementById(tab).classList.add("flex");
-
-    //  we will give same styles to all tab
-    tabBtns.forEach((tabBtn) => {
-      tabBtn.className = "tabbtn     cursor-pointer";
-    });
-
-    //  we will give special styles to the active tab
-    tabBtn.className = "tabbtn font-medium    text-purple-700 cursor-pointer";
-  });
-});
-
 // user profile sumenu
 function toggleMenu(btn) {
   const el = btn.parentElement.querySelector(".subMenu");

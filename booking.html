@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="bg-slate-200 w-full">
       <div class="container max-w-6xl px-4  mx-auto  md:max-w-full lg:max-w-screen-xl ">
         <div class="flex space-x-4 justify-center   md:justify-between">
           <div class="">
@@ -48,13 +48,10 @@
           <div id="menu" class="items-center space-x-1 flex">
             <a href="index.html"
               class="px-3 py-5 text-gray-700 hover:text-gray-900 active:text-purple-600 active:font-bold">Home</a>
-            <a href="@"
-              class="px-3 py-5 text-gray-700 hover:text-gray-900 active:text-purple-600 active:font-bold">Schedule</a>
-            <a href="@"
-              class="px-3 hidden md:block py-5 text-gray-700 hover:text-gray-900 active:text-purple-600 active:font-bold">Book
-              Private</a>
+
+
             <div class="">
-              <div class="relative py-2 flex items-center space-x-1 hasSubMenu">
+              <div class="relative py-2 flex items-center space-x-1 hasSubMenu ">
                 <img
                   src="https://images.unsplash.com/photo-1603503363848-6952525df449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zml0bmVzc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   class="= w-10 h-10 rounded-full" />
@@ -68,16 +65,24 @@
                   </svg>
                 </span>
               </div>
-              <ul class="bg-block absolute text-sm subMenu hidden">
+              <ul class="bg-black absolute text-sm subMenu hidden p-4 ">
                 <li>
-                  <a href="#" class="block py-2 ml-2 hover:text-purple-600">Profile
+                  <a href="#" class="block py-2 ml-2 text-slate-50 hover:text-purple-600">Profile
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2 ml-2 hover:text-purple-600">View Class</a>
+                  <a href="#" class="block py-2 ml-2 text-slate-50 hover:text-purple-600">Private Class
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2 ml-2 hover:text-purple-600 ">Logout</a>
+                  <a href="#" class="block py-2 ml-2 text-slate-50 hover:text-purple-600">Schedule
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 ml-2 text-slate-50 hover:text-purple-600">View Class</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 ml-2 text-red-600 hover:text-red-700 ">Logout</a>
                 </li>
               </ul>
             </div>
@@ -89,79 +94,90 @@
     </div>
   </header>
   <section>
-    <div class="container min-w-full min-h-screen bg-slate-50 bg-opacity-100 bg-cover mx-auto mt-16 lg:mt-24">
-      <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
-        <div class="rounded md:border mx-auto mt-4 w-[350px] md:w-[100%] ">
-          <!--Tabs-->
-          <ul class="flex justify-center  items-center pt-2  px-1  w-[350px] md:w-[100%] border-b" id="tabs">
-            <li
-              class="bg-white px-px  lg:px-4 text-gray-800 font-semibold py-2 rounded-t border-t border-r border-l -mb-px">
-              <a href="#Class" data-tabopen="tab1" class="tabbtn flex items-center  md:gap-2 active:text-purple-800">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-                Class
-                <span
-                  class="ml-1 bg-gray-800   rounded-full   w-5      md:w-12 h-1 inline-block active:bg-purple-800"></span>
-              </a>
-            </li>
-            <li class="px-px lg:px-4 text-gray-800 font-semibold py-2 rounded-t">
-              <a href="#instructor" data-tabopen="tab2"
-                class=" tabbtn flex items-center  md:gap-2 active:text-purple-800">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="
-                   2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-                Instructor
-                <span
-                  class="ml-1 bg-gray-800   rounded-full w-5   md:w-12 h-1 inline-block active:bg-purple-800"></span>
-              </a>
-            </li>
-            <li class="px-px lg:px-4 text-gray-800 font-semibold py-2 rounded-t">
-              <a href="#Time" data-tabopen="tab3" class="tabbtn flex items-center  md:gap-2  active:text-purple-800">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Time
-                <span
-                  class="ml-1 bg-gray-800  rounded-full w-5     md:w-12 h-1 inline-block active:bg-purple-800"></span>
-              </a>
-            </li>
-            <li class="px-px lg:px-4 text-gray-800 font-semibold py-2 rounded-t">
-              <a href="#payment" data-tabopen="tab4"
-                class="tabbtn  flex items-center   md:gap-2 active:text-purple-800">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="
-                   2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                </svg>
-                Payment
+    <div class="container   min-w-full min-h-screen bg-slate-50 bg-opacity-100 bg-cover  mx-auto -mt-10 ">
+      <div class=" overflow-hidden bg-no-repeat bg-cover h-[25rem]"
+        style="background-position: 50%; background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGZpdG5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');">
+      </div>
+      <div class="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6 mt-[-100px]"
+        style="background: hsla(0, 0%, 100%, 0.8); backdrop-filter: blur(30px);">
 
-              </a>
-            </li>
-          </ul>
-          <!--Tab Contents-->
-          <div class="tab-contents">
-            <div id="Class tabContents" class="tab p-4 ">
-              <div class="flex flex-row justify-between  max-w-full mt-28 ">
-                <div class="mx-5">
+        <div class="px-px py-10 mx-auto sm:max-w-[36rem] md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-4 lg:py-5">
+
+          <!--=====tab component======-->
+          <div x-data="{tab : 'Class'}">
+            <ul class="flex justify-center items-center my-4">
+
+              <li class="lg:px-4 text-gray-800 " :class="{ 'active font-bold  text-purple-600  ': tab === 'Class' }"
+                @click="tab = 'Class'">
+                <a href="#Class" class=" flex items-center  md:gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden md:block" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                  Class
+                  <span :class="{ 'active   bg-purple-600  ': tab === 'Class' }" @click="tab = 'Class'"
+                    class="ml-1 bg-gray-800   rounded-full   w-5  md:w-12 h-1 inline-block active:bg-purple-800"></span>
+                </a>
+              </li>
+              <li class="lg:px-4 text-gray-800" :class="{ 'active font-bold  text-purple-600 ': tab === 'Instructor' }"
+                @click="tab = 'Instructor'">
+                <a href="#instructor" class="  flex items-center  md:gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden md:block" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="
+                                       2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  Instructor
+                  <span :class="{ 'active   bg-purple-600 ': tab === 'Instructor' }" @click="tab = 'Instructor'"
+                    class="ml-1 bg-gray-800   rounded-full w-5   md:w-12 h-1 inline-block active:bg-purple-800"></span>
+                </a>
+              </li>
+              <li class="lg:px-4 text-gray-800" :class="{ 'active font-bold  text-purple-600': tab === 'time' }"
+                @click="tab = 'time'">
+                <a href="#Time" class=" flex items-center  md:gap-2">
+                  <svg xmlns=" http://www.w3.org/2000/svg" class="h-4 w-4 hidden md:block" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Time
+                  <span :class="{ 'active bg-purple-600': tab === 'time' }" @click="tab = 'time'"
+                    class=" ml-1 bg-gray-800  rounded-full w-5     md:w-12 h-1 inline-block "></span>
+                </a>
+              </li>
+              <li class="lg:px-4 text-gray-800 " :class="{ 'active font-bold  text-purple-600  ': tab === 'Payment' }"
+                @click="tab = 'Payment'">
+                <a href="#payment" class="  flex items-center   md:gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden md:block" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="
+                                       2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                  </svg>
+                  Payment
+
+                </a>
+              </li>
+            </ul>
+
+            <!--=====class Tab Contents=====-->
+
+            <div x-show="tab === 'Class'">
+              <div class="flex flex-row gap-2 md:justify-between w-full  md:max-w-full ">
+                <div class="mx-px">
                   <h3 class="font-bold  md:text-sm lg:text-xl">
                     Book a Classes
                   </h3>
-                  <p class="text-slate-800 font-bold text-sm">Kindly click on a session card to select your category</p>
+                  <p class="text-slate-800 font-bold text-sm">Kindly click on a session card to select your
+                    category</p>
                 </div>
 
-                <div class="justify-around  lg:block lg:self-end">
+                <div class="justify-around lg:block self-end">
                   <div class=" flex flex-row gap-4  justify-end ">
                     <button @click="swiper.slidePrev()" id="left"
-                      class="flex items-center justify-center w-10 h-10 -ml-2 text-white bg-purple-800 rounded-full shadow lg:-ml-2 focus:outline-none">
+                      class="flex items-center justify-center  w-8 h-8  md:w-10 md:h-10 -ml-2 text-white bg-purple-800 rounded-full shadow lg:-ml-2 focus:outline-none">
                       <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 chevron-left">
                         <path fill-rule="evenodd"
                           d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
@@ -169,7 +185,7 @@
                       </svg>
                     </button>
                     <button @click="swiper.slidePrev()" id="right"
-                      class="flex items-center justify-center w-10 h-10 -ml-2 text-white bg-purple-800 rounded-full shadow lg:-ml-2 focus:outline-none">
+                      class="flex items-center justify-center  w-8 h-8  md:w-10 md:h-10 -ml-2 text-white bg-purple-800 rounded-full shadow lg:-ml-2 focus:outline-none">
                       <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 chevron-left">
                         <path fill-rule="evenodd"
                           d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
@@ -182,27 +198,27 @@
               <!--class card post-->
               <div class="flex flex-col items-center md:flex-row lg:space-x-5">
                 <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container,{
-                  
-                  loop: true,
-                  slidesPerView: 1,
-                  spaceBetween: 0,
-
-                  breakpoints: {
-                    640: {
-                      slidesPerView: 1,
-                      spaceBetween: 0,
-                    },
-                    768: {
-                      slidesPerView: 2,
-                      spaceBetween: 0,
-                    },
-                    1024: {
-                      slidesPerView: 3,
-                      spaceBetween: 0,
-                    },
-                  },
-                  
-                })" class="relative flex flex-row w-full mx-auto overflow-hidden">
+                                      
+                                      loop: true,
+                                      slidesPerView: 1,
+                                      spaceBetween: 0,
+                    
+                                      breakpoints: {
+                                        640: {
+                                          slidesPerView: 1,
+                                          spaceBetween: 0,
+                                        },
+                                        768: {
+                                          slidesPerView: 2,
+                                          spaceBetween: 0,
+                                        },
+                                        1024: {
+                                          slidesPerView: 3,
+                                          spaceBetween: 0,
+                                        },
+                                      },
+                                      
+                                    })" class="relative flex flex-row w-full mx-auto overflow-hidden">
 
                   <div class="w-full mx-auto overflow-hidden swiper-container lg:max-w-screen-xl" x-ref="container">
                     <div class="swiper-wrapper" id="img_swiper">
@@ -232,7 +248,8 @@
                                       </div>
                                     </div>
                                     <p class="text-gray-300 text-sm font-medium capitalize">test fitness</p>
-                                    <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                      elit.
                                       Voluptatibus eveniet ratione nihil voluptatum atque rerum?</p>
                                   </div>
                                 </div>
@@ -267,7 +284,8 @@
                                       </div>
                                     </div>
                                     <p class="text-gray-300 text-sm font-medium capitalize">test fitness</p>
-                                    <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                      elit.
                                       Voluptatibus eveniet ratione nihil voluptatum atque rerum?</p>
                                   </div>
                                 </div>
@@ -302,7 +320,8 @@
                                       </div>
                                     </div>
                                     <p class="text-gray-300 text-sm font-medium capitalize">test fitness</p>
-                                    <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                      elit.
                                       Voluptatibus eveniet ratione nihil voluptatum atque rerum?</p>
                                   </div>
                                 </div>
@@ -338,7 +357,8 @@
                                       </div>
                                     </div>
                                     <p class="text-gray-300 text-sm font-medium capitalize">test fitness</p>
-                                    <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                      elit.
                                       Voluptatibus eveniet ratione nihil voluptatum atque rerum?</p>
                                   </div>
                                 </div>
@@ -353,9 +373,9 @@
               </div>
               <!--book class button-->
               <div class="flex  justify-end px-5">
-                <button type="button"
-                  class="inline-flex items-center font-medium text-white bg-purple-700 px-5 py-2 w-36 rounded-2xl">
-                  Book Class
+                <button type="button" @click="tab = 'Instructor'"
+                  class="inline-flex items-center font-medium text-white bg-purple-700 px-4 py-2 w-[170px] rounded-2xl">
+                  Book Instructor
 
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-5 ml-2 text-white" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -366,27 +386,28 @@
             </div>
             <!--class ends here-->
             <!--Book insreuctor start here-->
-            <div id="instructor tabContents" class="tab p-4 hidden">
-              <div class="flex flex-row justify-between  max-w-full mt-28 ">
-                <div class="mx-5">
+            <div x-show="tab ==='Instructor'" x-data="{swiper: null}">
+              <div class=" flex flex-row gap-2 md:justify-between w-full md:max-w-full  ">
+                <div class="mx-px ">
                   <h3 class="font-bold  md:text-sm lg:text-xl">
                     Book Instructor
                   </h3>
-                  <p class="text-slate-800 font-bold text-sm">Kindly click on a session card to select your category</p>
+                  <p class="text-slate-800 font-bold text-sm">Kindly click on a session card to select your category
+                  </p>
                 </div>
 
-                <div class="justify-around  lg:block lg:self-end">
+                <div class="justify-around  lg:block  self-end">
                   <div class=" flex flex-row gap-4  justify-end ">
                     <button @click="swiper.slidePrev()" id="left_slide"
-                      class="flex items-center justify-center w-10 h-10 -ml-2 text-white bg-purple-800 rounded-full shadow lg:-ml-2 focus:outline-none">
+                      class="flex items-center justify-center    w-8 h-8  md:w-10 md:h-10 -ml-2 text-white bg-purple-800 rounded-full shadow lg:-ml-2 focus:outline-none">
                       <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 chevron-left">
                         <path fill-rule="evenodd"
                           d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
                           clip-rule="evenodd"></path>
                       </svg>
                     </button>
-                    <button @click="swiper.slidePrev()" id="right_slide"
-                      class="flex items-center justify-center w-10 h-10 -ml-2 text-white bg-purple-800 rounded-full shadow lg:-ml-2 focus:outline-none">
+                    <button @click="swiper.slideNext()" id="right_slide"
+                      class="flex items-center justify-center  w-8 h-8  md:w-10 md:h-10 -ml-2 text-white bg-purple-800 rounded-full shadow lg:-ml-2 focus:outline-none">
                       <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 chevron-left">
                         <path fill-rule="evenodd"
                           d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
@@ -398,28 +419,28 @@
               </div>
               <!--instructors card post-->
               <div class="flex flex-col items-center md:flex-row lg:space-x-5">
-                <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container,{
-                                
-                                loop: true,
-                                slidesPerView: 1,
-                                spaceBetween: 0,
-              
-                                breakpoints: {
-                                  640: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 0,
-                                  },
-                                  768: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 0,
-                                  },
-                                  1024: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 10,
-                                  },
-                                },
-                                
-                              })" class="relative flex flex-row w-full mx-auto overflow-hidden">
+                <div x-init="swiper = new Swiper($refs.container,{
+                                                    
+                                                    loop: true,
+                                                    slidesPerView: 1,
+                                                    spaceBetween: 0,
+                                  
+                                                    breakpoints: {
+                                                      640: {
+                                                        slidesPerView: 1,
+                                                        spaceBetween: 0,
+                                                      },
+                                                      768: {
+                                                        slidesPerView: 2,
+                                                        spaceBetween: 0,
+                                                      },
+                                                      1024: {
+                                                        slidesPerView: 3,
+                                                        spaceBetween: 10,
+                                                      },
+                                                    },
+                                                    
+                                                  })" class="relative flex flex-row w-full mx-auto overflow-hidden">
 
                   <div class="w-full mx-auto overflow-hidden swiper-container lg:max-w-screen-xl" x-ref="container">
                     <div class="swiper-wrapper" id="cardSlider">
@@ -432,10 +453,10 @@
                                 <div
                                   class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60 shadow-lg">
                                   <div class=" flex justify-end   px-4  mt-5">
-                                    <span id="checkbox"
+                                    <span id="checkbox1"
                                       class=" w-7 h-7   bg-slate-700/30 rounded-full  transition-all cursor-pointer  flex justify-center items-center"
-                                      onclick="checked()">
-                                      <i class="text-slate-400/30 fa fa-check"></i>
+                                      onclick="selected(1)">
+                                      <i class="text-slate-400/30 fa fa-check-circle"></i>
                                     </span>
                                   </div>
                                   <div class="flex justify-center">
@@ -446,7 +467,7 @@
                                   </div>
 
                                   <div class="p-2 text-center">
-                                    <div class="flex  space-x-5 mt-4 mb-1 justify-center ">
+                                    <div class="flex  space-x-2 mt-4 mb-1 justify-center ">
                                       <h2 class=" font-bold tracking-wide text-gray-800 text-md md:text-xl capitalize">
                                         ayantade adebisi
                                       </h2>
@@ -480,10 +501,10 @@
                                 <div
                                   class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60 shadow-lg">
                                   <div class=" flex justify-end px-4  mt-5">
-                                    <span id="checkbox"
-                                      class=" w-7 h-7   bg-slate-700/30 rounded-full  transition-all cursor-pointer  flex justify-center items-center"
-                                      onclick="checked()">
-                                      <i class="text-slate-400/30 fa fa-check"></i>
+                                    <span id="checkbox2"
+                                      class="checkbox w-7 h-7   bg-slate-700/30 rounded-full  transition-all cursor-pointer  flex justify-center items-center"
+                                      onclick="selected(2)">
+                                      <i class="text-slate-400/30 fa fa-check-circle"></i>
                                     </span>
                                   </div>
                                   <div class="flex justify-center">
@@ -528,10 +549,10 @@
                                 <div
                                   class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60 shadow-lg">
                                   <div class=" flex justify-end px-4  mt-5">
-                                    <span id="checkbox"
+                                    <span id="checkbox3"
                                       class=" w-7 h-7   bg-slate-700/30 rounded-full  transition-all cursor-pointer  flex justify-center items-center"
-                                      onclick="checked()">
-                                      <i class="text-slate-400/30 fa fa-check"></i>
+                                      onclick="selected(3)">
+                                      <i class="text-slate-400/30 fa fa-check-circle"></i>
                                     </span>
                                   </div>
                                   <div class="flex justify-center">
@@ -577,10 +598,10 @@
                                 <div
                                   class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60 shadow-lg">
                                   <div class=" flex justify-end px-4  mt-5">
-                                    <span id="checkbox"
+                                    <span id="checkbox4"
                                       class=" w-7 h-7   bg-slate-700/30 rounded-full  transition-all cursor-pointer  flex justify-center items-center"
-                                      onclick="checked(4)">
-                                      <i class="text-slate-400/30 fa fa-check"></i>
+                                      onclick="selected(4)">
+                                      <i class="text-slate-400/30 fa fa-check-circle"></i>
                                     </span>
                                   </div>
                                   <div class="flex justify-center">
@@ -622,29 +643,30 @@
               </div>
               <!--book class button-->
               <div class="flex  justify-end px-5">
-                <button type="button"
-                  class="inline-flex items-center font-medium text-white bg-purple-700 px-5 py-2 w-44 rounded-2xl">
-                  Book instructor
+                <button type="button" @click="tab= 'time'"
+                  class="inline-flex items-center font-medium text-gray-300  hover:text-gray-400 bg-purple-700 hover:bg-purple-800 px-4 py-2 w-[140px] rounded-2xl">
+                  Book Time
 
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-5 ml-2 text-white" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-5 ml-2 text-gray-300 hover:text-gray-400"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </button>
               </div>
             </div>
             <!--book time start here-->
-            <div id="Time tabContents" class="tab p-4 hidden">
-              <div class=" max-w-full mt-28 ">
-                <div class="mx-5">
+            <div x-show="tab ==='time'">
+              <div class="max-w-full">
+                <div class="">
                   <h3 class="font-bold  md:text-sm lg:text-xl">
                     Book Time
                   </h3>
-                  <p class="text-slate-800 font-bold text-sm">Kindly click on a session card to select your category</p>
+                  <p class="text-slate-800 font-bold text-sm">Kindly click on a session card to select your category
+                  </p>
                 </div>
               </div>
               <!--select duration -->
-              <div class="max-w-lg grid grid-cols-2 md:grid-cols-4 gap-2 md:mx-20 justify-items-center mt-5">
+              <div class=" grid grid-cols-2 md:grid-cols-4    gap-2 md:max-w-2xl justify-items-center mt-5">
                 <button
                   class="bg-white active:bg-purple-700 focus:bg-purple-800 text-gray-800 focus:text-white font-medium border border-3 border-opacity-30  border-purple-600  px-2 py-2 w-32">15
                   mimites
@@ -663,19 +685,17 @@
                   mimites
                 </button>
               </div>
-
               <!--calendar and time  picker-->
-
-              <div class="flex lg:flex-row flex-col gap-10 mt-10">
+              <div class="flex lg:flex-row flex-col gap-10        mt-5">
                 <!--calendar-->
                 <div x-data="app()" x-init="[initDate(), getNoOfDays()]" x-cloak>
                   <div class="container mx-auto px-4 py-2 md:py-24">
 
                     <!-- <div class="font-bold text-gray-800 text-xl mb-4">
-                              				Schedule Tasks
-                              			</div> -->
+                                                  				Schedule Tasks
+                                                  			</div> -->
 
-                    <div class="md:max-w-screen-xl w-full h-[100%] bg-white rounded-lg shadow overflow-hidden">
+                    <div class="md:max-w-screen-xl w-full    h-[100%] bg-white rounded-lg shadow overflow-hidden">
 
                       <div class="flex items-center justify-between  bg-purple-800 py-2 px-6">
                         <div>
@@ -737,8 +757,8 @@
                   </div>
                 </div>
                 <!--time duration -->
-                <div class="container mx-auto px-4 py-2 md:py-24">
-                  <div class="md:max-w-md w-full h-[100%] bg-white rounded-lg shadow overflow-hidden">
+                <div class="container mx-auto px-4 -py-16   lg:py-24">
+                  <div class="md:max-w-screen-xl w-full h-[100%] bg-white rounded-lg shadow overflow-hidden">
                     <div class="flex items-center justify-between  bg-purple-800 py-2 px-6">
                       <p class="text-sm font-medium text-slate-500 capitalize">set time</p>
                     </div>
@@ -764,161 +784,173 @@
 
               </div>
 
+              <div class="flex  justify-end  px-5 mt-8 lg:-mt-16 md:mx-w- lg:mx-32">
+                <button type="button" @click="tab= 'Payment'"
+                  class="inline-flex items-center font-medium text-white bg-purple-700 px-5 py-2 w-44 rounded-2xl">
+                  Make Payment
 
-
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-5 ml-2 text-white" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <!--make payment start here-->
-          <div id="payment tabContents" class="tab p-4 hidden">
-            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-4">
-              <div class="flex flex-col space-y-5 lg:space-y-16 ">
-                <div>
-                  <img
-                    src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zml0bmVzc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                    alt="image" class="object-cover object-center w-full rounded-md shadow-md lg:h-48 md:h-36 ">
+            <!--=====payment tah starts here=====-->
+            <div x-show="tab ==='Payment'" class="mt-24">
+              <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-4">
+                <div class="flex flex-col space-y-5 lg:space-y-16 ">
+                  <div>
+                    <img
+                      src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zml0bmVzc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                      alt="image" class="object-cover object-center w-full rounded-md shadow-md lg:h-48 md:h-36 ">
 
-                </div>
-                <div class="bg-slate-100 w-full shadow-2xl rounded-2xl pl-8">
-                  <h3 class="text-gray-600 font-medium text-xl capitalize py-6 "> session details</h3>
-                  <div class="pt-8 w-full border-t border-gray-800 border-opacity-30">
-                    <div class="flex flex-col space-y-5 py-5">
-                      <p class="font-meduim text-gray-600     text-lg">Class: Yogo</p>
-                      <p class="font-meduim text-gray-600 text-lg">Instructor: Wadan Marin</p>
-                      <p class="font-meduim text-gray-600 text-lg">Date and TIme: 9:30am Documented</p>
-                      <p class="font-meduim text-gray-600 text-lg">duration: 1 Hour</p>
-                      <div class="flex justify-between pr-4">
-                        <p class="font-meduim text-gray-600 text-lg">Price</p>
-                        <p class="font-meduim text-gray-600 text-lg">$150</p>
+                  </div>
+                  <div class="bg-slate-100 w-full shadow-2xl rounded-2xl pl-8">
+                    <h3 class="text-gray-600 font-medium text-xl capitalize py-6 "> session details</h3>
+                    <div class="pt-8 w-full border-t border-gray-800 border-opacity-30">
+                      <div class="flex flex-col space-y-5 py-5">
+                        <p class="font-meduim text-gray-600     text-sm md:text-lg">Class: Yogo</p>
+                        <p class="font-meduim text-gray-600     text-sm md:text-lg">Instructor: Wadan Marin</p>
+                        <p class="font-meduim text-gray-600 text-sm md:text-lg">Date and TIme: 9:30am Documented</p>
+                        <p class="font-meduim text-gray-600      text-sm md:text-lg">duration: 1 Hour</p>
+                        <div class="flex justify-between pr-4">
+                          <p class="font-meduim text-gray-600 text-md md:text-lg">Price</p>
+                          <p class="font-meduim text-gray-600text-md md:text-lg">$150</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!--payment-->
-              <div class="bg-white w-full shadow-2xl rounded-md h-auto">
-                <div class=" ">
-                  <p class=" bg-purple-600 rounded  text-gray-600 font-medium text-xl py-5 pl-5 capitalize">payment
-                    methods</p>
-                  <div class="py-5 border-t border-gray-600 border-opacity-30 "></div>
-                </div>
+                <!--payment-->
+                <div class="bg-white w-full shadow-2xl rounded-md h-auto">
+                  <div class=" ">
+                    <p class=" bg-purple-600 rounded  text-gray-600 font-medium text-xl py-5 pl-5 capitalize">
+                      payment
+                      methods</p>
+                    <div class="py-5 border-t border-gray-600 border-opacity-30 "></div>
+                  </div>
 
-                <ul class="flex  justify-center items-center      my-2">
-                  <li class="mx-2">
-                    <img class="w-16"
-                      src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/computop.png"
-                      alt="" />
-                  </li>
-                  <li class="mx-2">
-                    <img class="w-14"
-                      src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/verified-by-visa.png"
-                      alt="" />
-                  </li>
-                  <li class="ml-5">
-                    <img class="w-7"
-                      src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/mastercard-id-check.png"
-                      alt="" />
-                  </li>
-                </ul>
-                <div class=" mx-10 ">
-                  <p class="text-xl font-semibold capitalize">payment details</p>
-                  <div class="input_text mt-6 relative"><input type="text"
-                      class="h-12 pl-7 outline-none px-2 focus:border-slate-purple-600/10 transition-all w-full border-b"
-                      placeholder="John Mark" />
-                    <span class="absolute left-0 text-sm -top-4 capitalize">
-                      cardholder name
-                    </span>
-                    <i class="absolute left-2 top-4 text-gray-400 fa fa-user"></i>
-                  </div>
-                  <div class="input_text mt-8 relative"><input type="text"
-                      class="h-12 pl-7 outline-none px-2 focus:border-slate-purple-600/10 transition-all w-full border-b"
-                      placeholder="0000 0000 0000 0000" data-slots="0" data-accept="\d" size="19" />
-                    <span class="absolute left-0 text-sm -top-4 capitalize">
-                      card number
-                    </span>
-                    <i class="absolute left-2 top-[14px] text-gray-400 text-sm fa fa-credit-card"></i>
-                  </div>
-                  <div class="mt-8 flex gap-5">
-                    <div class="input_text  relative"><input type="text"
+                  <ul class="flex  justify-center items-center      my-2">
+                    <li class="mx-2">
+                      <img class="w-16"
+                        src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/computop.png"
+                        alt="" />
+                    </li>
+                    <li class="mx-2">
+                      <img class="w-14"
+                        src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/verified-by-visa.png"
+                        alt="" />
+                    </li>
+                    <li class="ml-5">
+                      <img class="w-7"
+                        src="https://www.computop-paygate.com/Templates/imagesaboutYou_desktop/images/mastercard-id-check.png"
+                        alt="" />
+                    </li>
+                  </ul>
+                  <div class=" mx-10 ">
+                    <p class="text-xl font-semibold capitalize">payment details</p>
+                    <div class="input_text mt-6 relative"><input type="text"
                         class="h-12 pl-7 outline-none px-2 focus:border-slate-purple-600/10 transition-all w-full border-b"
-                        placeholder="mm/yyyy" data-slots="my" />
+                        placeholder="John Mark" />
                       <span class="absolute left-0 text-sm -top-4 capitalize">
-                        Expiry
+                        cardholder name
                       </span>
-                      <i class="absolute left-2 top-4 text-gray-400 fa fa-calender-o"></i>
+                      <i class="absolute left-2 top-4 text-gray-400 fa fa-user"></i>
                     </div>
-                    <div class="input_text relative"><input type="text"
+                    <div class="input_text mt-8 relative"><input type="text"
                         class="h-12 pl-7 outline-none px-2 focus:border-slate-purple-600/10 transition-all w-full border-b"
-                        placeholder="000" data-slots="0" data-accept="\d" size="3" />
-                      <span class="absolute left-0 text-sm -top-4 uppercase">
-                        cvv
+                        placeholder="0000 0000 0000 0000" data-slots="0" data-accept="\d" size="19" />
+                      <span class="absolute left-0 text-sm -top-4 capitalize">
+                        card number
                       </span>
-                      <i class="absolute left-2 top-4 text-gray-400 fa fa-lock"></i>
+                      <i class="absolute left-2 top-[14px] text-gray-400 text-sm fa fa-credit-card"></i>
                     </div>
-                  </div>
-                  <div class="flex  flex-col  items-center justify-center mt-4">
-                    <button
-                      class="outline-none pay h-12 bg-purple-600 text-white rounded-lg w-full  md:w-1/2 cursor-pointer transition-all capitalize">pay</button>
-                    <p class="text-lg text-center mt-4 text-gray-600 font-semibold capitalize">other payment methods</p>
-                  </div>
-                  <!--other payment methods button-->
-                  <div class="flex flex-col md:flex-row gap-5 my-5">
-                    <button
-                      class=" flex justify-around items-center h-12 text-gray-900 font-bold px-2 bg-slate-600/10 rounded-lg w-full md:w-1/2 cursor-pointer transition-all calendar">
-                      <svg class="w-16 h-16" viewBox="0 -34.55 120.3 120.3" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M22.8 6.6c1.4-1.8 2.4-4.2 2.1-6.6-2.1.1-4.6 1.4-6.1 3.1-1.3 1.5-2.5 4-2.2 6.3 2.4.3 4.7-1 6.2-2.8M24.9 10c-3.4-.2-6.3 1.9-7.9 1.9-1.6 0-4.1-1.8-6.8-1.8-3.5.1-6.7 2-8.5 5.2-3.6 6.3-1 15.6 2.6 20.7 1.7 2.5 3.8 5.3 6.5 5.2 2.6-.1 3.6-1.7 6.7-1.7s4 1.7 6.8 1.6 4.6-2.5 6.3-5.1c2-2.9 2.8-5.7 2.8-5.8-.1-.1-5.5-2.1-5.5-8.3-.1-5.2 4.2-7.7 4.4-7.8-2.3-3.6-6.1-4-7.4-4.1" />
-                        <path
-                          d="M54.3 2.9c7.4 0 12.5 5.1 12.5 12.4 0 7.4-5.2 12.5-12.7 12.5H46v12.9h-5.9V2.9h14.2zm-8.3 20h6.7c5.1 0 8-2.8 8-7.5 0-4.8-2.9-7.5-8-7.5h-6.8v15h.1zM68.3 33c0-4.8 3.7-7.8 10.3-8.2l7.6-.4v-2.1c0-3.1-2.1-4.9-5.5-4.9-3.3 0-5.3 1.6-5.8 4h-5.4c.3-5 4.6-8.7 11.4-8.7 6.7 0 11 3.5 11 9.1v19h-5.4v-4.5h-.1c-1.6 3.1-5.1 5-8.7 5-5.6 0-9.4-3.4-9.4-8.3zm17.9-2.5v-2.2l-6.8.4c-3.4.2-5.3 1.7-5.3 4.1 0 2.4 2 4 5 4 4 0 7.1-2.7 7.1-6.3zM96.9 51v-4.6c.4.1 1.4.1 1.8.1 2.6 0 4-1.1 4.9-3.9 0-.1.5-1.7.5-1.7l-10-27.6h6.1l7 22.5h.1l7-22.5h6L110 42.4c-2.4 6.7-5.1 8.8-10.8 8.8-.4-.1-1.8-.1-2.3-.2z" />
-                      </svg>
-                      use apple pay
+                    <div class="mt-8 flex gap-5">
+                      <div class="input_text  relative"><input type="text"
+                          class="h-12 pl-7 outline-none px-2 focus:border-slate-purple-600/10 transition-all w-full border-b"
+                          placeholder="mm/yyyy" data-slots="my" />
+                        <span class="absolute left-0 text-sm -top-4 capitalize">
+                          Expiry
+                        </span>
+                        <i class="absolute left-2 top-4 text-gray-400 fa fa-calender-o"></i>
+                      </div>
+                      <div class="input_text relative"><input type="text"
+                          class="h-12 pl-7 outline-none px-2 focus:border-slate-purple-600/10 transition-all w-full border-b"
+                          placeholder="000" data-slots="0" data-accept="\d" size="3" />
+                        <span class="absolute left-0 text-sm -top-4 uppercase">
+                          cvv
+                        </span>
+                        <i class="absolute left-2 top-4 text-gray-400 fa fa-lock"></i>
+                      </div>
+                    </div>
+                    <div class="flex  flex-col  items-center justify-center mt-4">
+                      <button
+                        class="outline-none pay h-12 bg-purple-600 text-white rounded-lg w-full  md:w-1/2 cursor-pointer transition-all capitalize">pay</button>
+                      <p class="text-[0.95rem] md:text-lg text-center mt-4 text-gray-600 font-semibold capitalize">other
+                        payment methods
+                      </p>
+                    </div>
+                    <!--other payment methods button-->
+                    <div class="flex flex-col md:flex-row justify-center gap-5 my-5">
+                      <button
+                        class=" flex justify-around items-center h-12 text-gray-900 font-semibold text-[0.75rem] px-2 bg-slate-600/10 rounded-lg w-full md:w-[200px] cursor-pointer transition-all ">
+                        <svg class="w-10 h-10" viewBox="0 -34.55 120.3 120.3" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22.8 6.6c1.4-1.8 2.4-4.2 2.1-6.6-2.1.1-4.6 1.4-6.1 3.1-1.3 1.5-2.5 4-2.2 6.3 2.4.3 4.7-1 6.2-2.8M24.9 10c-3.4-.2-6.3 1.9-7.9 1.9-1.6 0-4.1-1.8-6.8-1.8-3.5.1-6.7 2-8.5 5.2-3.6 6.3-1 15.6 2.6 20.7 1.7 2.5 3.8 5.3 6.5 5.2 2.6-.1 3.6-1.7 6.7-1.7s4 1.7 6.8 1.6 4.6-2.5 6.3-5.1c2-2.9 2.8-5.7 2.8-5.8-.1-.1-5.5-2.1-5.5-8.3-.1-5.2 4.2-7.7 4.4-7.8-2.3-3.6-6.1-4-7.4-4.1" />
+                          <path
+                            d="M54.3 2.9c7.4 0 12.5 5.1 12.5 12.4 0 7.4-5.2 12.5-12.7 12.5H46v12.9h-5.9V2.9h14.2zm-8.3 20h6.7c5.1 0 8-2.8 8-7.5 0-4.8-2.9-7.5-8-7.5h-6.8v15h.1zM68.3 33c0-4.8 3.7-7.8 10.3-8.2l7.6-.4v-2.1c0-3.1-2.1-4.9-5.5-4.9-3.3 0-5.3 1.6-5.8 4h-5.4c.3-5 4.6-8.7 11.4-8.7 6.7 0 11 3.5 11 9.1v19h-5.4v-4.5h-.1c-1.6 3.1-5.1 5-8.7 5-5.6 0-9.4-3.4-9.4-8.3zm17.9-2.5v-2.2l-6.8.4c-3.4.2-5.3 1.7-5.3 4.1 0 2.4 2 4 5 4 4 0 7.1-2.7 7.1-6.3zM96.9 51v-4.6c.4.1 1.4.1 1.8.1 2.6 0 4-1.1 4.9-3.9 0-.1.5-1.7.5-1.7l-10-27.6h6.1l7 22.5h.1l7-22.5h6L110 42.4c-2.4 6.7-5.1 8.8-10.8 8.8-.4-.1-1.8-.1-2.3-.2z" />
+                        </svg>
+                        use apple pay
 
-                    </button>
-                    <button
-                      class="  flex justify-around items-center h-12 text-white font-medium px-2 bg-gray-900 rounded-lg w-full md:w-1/2 cursor-pointer transition-all calendar">
-                      <svg class="w-16 h-16" enable-background="new 0 0 2387.3 948" version="1.1"
-                        viewBox="0 0 2387.3 948" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                        <style type="text/css">
-                          .st0 {
-                            fill: #5F6368;
-                          }
+                      </button>
+                      <button
+                        class="  flex justify-around items-center h-12 text-white font-semibold text-[0.75rem] px-2 bg-gray-900 rounded-lg w-full md:w-[200px] cursor-pointer transition-all ">
+                        <svg class="w-10 h-10" enable-background="new 0 0 2387.3 948" version="1.1"
+                          viewBox="0 0 2387.3 948" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                          <style type="text/css">
+                            .st0 {
+                              fill: #5F6368;
+                            }
 
-                          .st1 {
-                            fill: #4285F4;
-                          }
+                            .st1 {
+                              fill: #4285F4;
+                            }
 
-                          .st2 {
-                            fill: #34A853;
-                          }
+                            .st2 {
+                              fill: #34A853;
+                            }
 
-                          .st3 {
-                            fill: #FBBC04;
-                          }
+                            .st3 {
+                              fill: #FBBC04;
+                            }
 
-                          .st4 {
-                            fill: #EA4335;
-                          }
-                        </style>
+                            .st4 {
+                              fill: #EA4335;
+                            }
+                          </style>
 
-                        <path class="st0"
-                          d="m1129.1 463.2v277.8h-88.2v-686.2h233.8c56.4-1.2 110.9 20.2 151.4 59.4 41 36.9 64.1 89.7 63.2 144.8 1.2 55.5-21.9 108.7-63.2 145.7-40.9 39-91.4 58.5-151.4 58.4l-145.6 0.1zm0-323.9v239.6h147.8c32.8 1 64.4-11.9 87.2-35.5 46.3-45 47.4-119.1 2.3-165.4-0.8-0.8-1.5-1.6-2.3-2.3-22.5-24.1-54.3-37.3-87.2-36.4h-147.8zm563.4 116.9c65.2 0 116.6 17.4 154.3 52.2s56.5 82.6 56.5 143.2v289.4h-84.3v-65.2h-3.8c-36.5 53.7-85.1 80.5-145.7 80.5-51.7 0-95-15.3-129.8-46-33.8-28.5-53-70.7-52.2-115 0-48.6 18.4-87.2 55.1-115.9s85.7-43.1 147.1-43.1c52.3 0 95.5 9.6 129.3 28.7v-20.2c0.2-30.2-13.2-58.8-36.4-78-23.3-21-53.7-32.5-85.1-32.1-49.2 0-88.2 20.8-116.9 62.3l-77.6-48.9c42.6-61.3 105.8-91.9 189.5-91.9zm-114.1 341.1c-0.1 22.8 10.8 44.2 29.2 57.5 19.5 15.3 43.7 23.5 68.5 23 37.2-0.1 72.9-14.9 99.2-41.2 29.2-27.5 43.8-59.7 43.8-96.8-27.5-21.9-65.8-32.9-115-32.9-35.8 0-65.7 8.6-89.6 25.9-24.1 17.6-36.1 38.9-36.1 64.5zm808.9-325.8-294.3 676.5h-91l109.2-236.7-193.6-439.8h95.8l139.9 337.3h1.9l136.1-337.3h96z" />
+                          <path class="st0"
+                            d="m1129.1 463.2v277.8h-88.2v-686.2h233.8c56.4-1.2 110.9 20.2 151.4 59.4 41 36.9 64.1 89.7 63.2 144.8 1.2 55.5-21.9 108.7-63.2 145.7-40.9 39-91.4 58.5-151.4 58.4l-145.6 0.1zm0-323.9v239.6h147.8c32.8 1 64.4-11.9 87.2-35.5 46.3-45 47.4-119.1 2.3-165.4-0.8-0.8-1.5-1.6-2.3-2.3-22.5-24.1-54.3-37.3-87.2-36.4h-147.8zm563.4 116.9c65.2 0 116.6 17.4 154.3 52.2s56.5 82.6 56.5 143.2v289.4h-84.3v-65.2h-3.8c-36.5 53.7-85.1 80.5-145.7 80.5-51.7 0-95-15.3-129.8-46-33.8-28.5-53-70.7-52.2-115 0-48.6 18.4-87.2 55.1-115.9s85.7-43.1 147.1-43.1c52.3 0 95.5 9.6 129.3 28.7v-20.2c0.2-30.2-13.2-58.8-36.4-78-23.3-21-53.7-32.5-85.1-32.1-49.2 0-88.2 20.8-116.9 62.3l-77.6-48.9c42.6-61.3 105.8-91.9 189.5-91.9zm-114.1 341.1c-0.1 22.8 10.8 44.2 29.2 57.5 19.5 15.3 43.7 23.5 68.5 23 37.2-0.1 72.9-14.9 99.2-41.2 29.2-27.5 43.8-59.7 43.8-96.8-27.5-21.9-65.8-32.9-115-32.9-35.8 0-65.7 8.6-89.6 25.9-24.1 17.6-36.1 38.9-36.1 64.5zm808.9-325.8-294.3 676.5h-91l109.2-236.7-193.6-439.8h95.8l139.9 337.3h1.9l136.1-337.3h96z" />
 
-                        <path class="st1"
-                          d="m772.8 403.2c0-26.9-2.2-53.7-6.8-80.2h-371.8v151.8h212.9c-8.8 49-37.2 92.3-78.7 119.8v98.6h127.1c74.4-68.5 117.3-170 117.3-290z" />
-                        <path class="st2"
-                          d="m394.2 788.5c106.4 0 196-34.9 261.3-95.2l-127.1-98.6c-35.4 24-80.9 37.7-134.2 37.7-102.8 0-190.1-69.3-221.3-162.7h-130.9v101.6c66.9 133.2 203.2 217.2 352.2 217.2z" />
-                        <path class="st3"
-                          d="M172.9,469.7c-16.5-48.9-16.5-102,0-150.9V217.2H42c-56,111.4-56,242.7,0,354.1L172.9,469.7z" />
-                        <path class="st4"
-                          d="M394.2,156.1c56.2-0.9,110.5,20.3,151.2,59.1L658,102.7C586.6,35.7,492.1-1.1,394.2,0  C245.2,0,108.9,84.1,42,217.2l130.9,101.6C204.1,225.4,291.4,156.1,394.2,156.1z" />
-                      </svg>
+                          <path class="st1"
+                            d="m772.8 403.2c0-26.9-2.2-53.7-6.8-80.2h-371.8v151.8h212.9c-8.8 49-37.2 92.3-78.7 119.8v98.6h127.1c74.4-68.5 117.3-170 117.3-290z" />
+                          <path class="st2"
+                            d="m394.2 788.5c106.4 0 196-34.9 261.3-95.2l-127.1-98.6c-35.4 24-80.9 37.7-134.2 37.7-102.8 0-190.1-69.3-221.3-162.7h-130.9v101.6c66.9 133.2 203.2 217.2 352.2 217.2z" />
+                          <path class="st3"
+                            d="M172.9,469.7c-16.5-48.9-16.5-102,0-150.9V217.2H42c-56,111.4-56,242.7,0,354.1L172.9,469.7z" />
+                          <path class="st4"
+                            d="M394.2,156.1c56.2-0.9,110.5,20.3,151.2,59.1L658,102.7C586.6,35.7,492.1-1.1,394.2,0  C245.2,0,108.9,84.1,42,217.2l130.9,101.6C204.1,225.4,291.4,156.1,394.2,156.1z" />
+                        </svg>
 
-                      pay with google pay
+                        pay with google pay
 
-                    </button>
+                      </button>
+                    </div>
+
                   </div>
 
                 </div>
-
               </div>
             </div>
           </div>
@@ -1030,18 +1062,29 @@
 
   <!--script link-->
   <script src="./assets/js/app.js"></script>
-  <script src="./assets/js/profilemenu.js"></script>
   <script src="./assets/js/instructor.js"></script>
+  <script src="./assets/js/profilemenu.js"></script>
+
   <script src="./assets/js/calendar.js"></script>
   <script src="./assets/js/payment.js"></script>
   <script src="./assets/js/alpine.min.js"></script>
 
-
-
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+  <script>
+    function setup() {
+      return {
+        activeTab: 0,
+        tabs: [
+          "Class",
+          "Instructor",
+          "Time",
+          "Payment",
+        ]
+      };
+    };
+  </script>
 </body>
 
 </html>

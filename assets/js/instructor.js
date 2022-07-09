@@ -6,33 +6,33 @@ const leftSlide = document.getElementById("left_slide");
 const rightSlide = document.getElementById("right_slide");
 const card = document.querySelectorAll("#cardSlider card");
 
-let ide = 0;
+var idx = 0;
 
 function changeCard() {
-  if (ide > card.length - 1) {
-    ide = 0;
-  } else if (ide < 0) {
-    ide = card.length - 1;
+  if (idx > card.length - 1) {
+    idx = 0;
+  } else if (idx < 0) {
+    idx = card.length - 1;
   }
-  imgs_swiper.style.transform = `translateX(${-ide * 500}px)`;
+  imgs_swiper.style.transform = `translateX(${-idx * 600}px)`;
 }
 rightSlide.addEventListener("click", () => {
-  ide++;
+  idx++;
   changeCard();
 });
 leftSlide.addEventListener("click", () => {
-  ide--;
+  idx--;
   changeCard();
-});
+});*/
 
 // checkbox function for selecting any instructor
 
-function checked_box(checkbox) {
-  let check_box = document.querySelector("check" + checkbox);
-  check_box.classList.toggle("bg-purple-800");
-}*/
+function selected(id) {
+  let selectbox = document.getElementById("checkbox" + id);
+  selectbox.classList.toggle("bg-purple-600");
+}
 
-const slides = document.getElementById("cardSlider");
+/*const slides = document.getElementById("cardSlider");
 const prevBtn = document.getElementById("left_slide");
 const nextBtn = document.getElementById("right_slide");
 slides.forEach(function (slide, index) {
@@ -62,4 +62,6 @@ function carousel() {
     slide.style.transform = `translateX(-${counter * 100}%)`;
   });
 }
-prevBtn.style.display = "none";
+prevBtn.style.display = "none";*/
+
+// check box function for selecting any class

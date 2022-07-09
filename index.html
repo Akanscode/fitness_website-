@@ -34,7 +34,7 @@
 
           <!-- primary nav -->
           <div class="items-center hidden space-x-1 md:flex">
-            <div class="relative p-2 mr-3 text-gray-700 hover:text-gray-900" x-data="{ open: false }">
+            <div class="relative p-2 mr-2 text-gray-700 hover:text-gray-900" x-data="{ open: false }">
               <a href="index.html" @click="open = true" style="text-transform: inherit" class="flex items-center">
                 Classes
                 <svg class="h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -51,11 +51,11 @@
                 </li>
               </ul>
             </div>
-            <a href="#" class="px-3 py-5 text-gray-700 hover:text-gray-900">Contemporary Dance</a>
-            <a href="#" class="px-3 py-5 text-gray-700 hover:text-gray-900">Blog</a>
-            <a href="#" class="px-3 py-5 text-gray-700 hover:text-gray-900">Our Story</a>
-            <a href="#" class="px-3 py-5 text-gray-700 hover:text-gray-900">Contact Us</a>
-            <div class="items-center flex justify-between mx-2">
+            <a href="#class" class="px-2 py-5 text-gray-700 hover:text-gray-900">Contemporary Dance</a>
+            <a href="#blog" class="px-2 py-5 text-gray-700 hover:text-gray-900">Blog</a>
+            <a href="#story" class="px-2 py-5 text-gray-700 hover:text-gray-900">Our Story</a>
+            <a href="#contact" class="px-2 py-5 text-gray-700 hover:text-gray-900">Contact Us</a>
+            <div class="items-center flex justify-between md:hidden mx-2">
               <a href="" class="px-3 py-5">Login</a>
               <a href="booking.html"
                 class="px-3 py-2 text-sm text-white transition duration-300 bg-purple-400 rounded hover:bg-purple-500 hover:text-slate-200">Book
@@ -64,7 +64,7 @@
           </div>
 
           <!-- secondary nav -->
-          <div class="items-center hidden space-x-1 md:hidden lg:flex">
+          <div class="items-center hidden space-x-1  md:flex">
             <a href="" class="px-3 py-5">Login</a>
             <a href="booking.html"
               class="px-3 py-2 text-sm text-white transition duration-300 bg-purple-400 rounded hover:bg-purple-500 hover:text-slate-200">Book
@@ -204,7 +204,7 @@
           </p>
         </div>
 
-        <div class="flex flex-row max-w-md mt-28 md:space-x-10">
+        <div id="class" class="flex flex-row max-w-md mt-28 md:space-x-10">
           <div class="mx-5">
             <h6 class="mb-2 font-bold text-purple-900 text-md">Classes</h6>
             <h3 class="font-bold capitalize md:text-md lg:text-2xl">
@@ -512,7 +512,7 @@
           </div>
         </div>
         <!--see more on a small screen-->
-        <div class="flex flex-col items-center justify-center block lg:hidden">
+        <div class="flex flex-col items-center  justify-center  lg:hidden">
           <a href="" class="inline-flex items-center font-medium text-purple-700">
             See More
 
@@ -527,11 +527,12 @@
   </section>
 
   <!--=======founder and season video========-->
-  <section>
+  <section id="story">
     <div class="container min-w-full min-h-full mx-auto bg-cover bg-gradient-to-r from-slate-100 to-slate-00">
       <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
         <!--first founder image and details-->
-        <div class="flex lg:flex-row flex-col justify-center gap-16 mt-8 lg:mt-32 mx-5 md:mx-[150px] lg:mx-[250px]">
+        <div
+          class="flex lg:flex-row flex-col  md:space-y-10 justify-center gap-16 mt-8 lg:mt-32 mx-5 md:mx-[150px] lg:mx-[250px]">
           <div class="w-full lg:max-w-md">
             <h6 class="mb-6 text-sm font-bold text-purple-800 capitalize lg:text-xl">
               our talented stuff
@@ -550,7 +551,7 @@
               Read more</a>
           </div>
           <div class="w-full lg:max-w-md">
-            <div class="relative w-full h-40 ml-2 bg-purple-900 shadow-2xl md:ml-12 top-4 md:w-64 md:h-40 xl:h-56">
+            <div class="relative w-full h-40 ml-2 bg-purple-900 shadow-2xl md:ml-12 top-4 md:w-[16rem] md:h-40 xl:h-56">
             </div>
 
             <img class="relative object-cover h-56 shadow-2xl -top-32 lg:-top-80 w-72 md:h-64 xl:h-80"
@@ -559,9 +560,10 @@
           </div>
         </div>
         <!--second founder image-->
-        <div class="flex lg:flex-row flex-col flex-col-reverse lg:gap-10 mt-4 mx-5 md:mx-[150px] lg:mx-[250px]">
+        <div class="flex lg:flex-row  flex-col-reverse lg:gap-10 mt-4 mx-5 md:mx-[150px] lg:mx-[250px]">
           <div class="w-full lg:max-w-md">
-            <div class="relative w-64 h-40 ml-2 bg-purple-900 shadow-2xl md:ml-12 top-4 md:h-40 xl:h-56"></div>
+            <div class="relative w-full h-40 ml-2 bg-purple-900 shadow-2xl md:ml-12 top-4 md:w-[16rem] md:h-40 xl:h-56">
+            </div>
 
             <img class="relative object-cover h-56 shadow-2xl -top-32 lg:-top-80 w-72 md:h-64 xl:h-80"
               src="https://images.unsplash.com/photo-1594583388237-911c593badee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI5fHx3b21hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
@@ -610,7 +612,7 @@
                 <span class="hidden w-1 h-1 ml-1 bg-purple-800 rounded-full lg:inline-block"></span>
               </div>
             </div>
-            <div class="flex self-end justify-around block">
+            <div class="flex self-end justify-around ">
               <a href="" class="inline-flex items-center font-medium text-purple-700">See more
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-5 ml-2 text-purple-700" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -923,7 +925,7 @@
   </section>
 
   <!--blog post section-->
-  <section>
+  <section id="blog">
     <!--blog post -->
     <div class="container bg-[#F7EAFE] bg-cover min-w-full min-h-full mx-auto">
       <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -940,7 +942,7 @@
             </div>
           </div>
           <!--see more link-->
-          <div class="self-end justify-around hidden">
+          <div class="self-end justify-around ">
             <a href="" class="inline-flex items-center font-medium text-purple-700">
               See More
 
@@ -962,17 +964,17 @@
                     alt="blog" />
                 </div>
                 <div class="p-4">
-                  <h2 class="mt-2 mb-2 font-bold tracking-wide text-gray-800 text-green-300 text-md">
+                  <h2 class="mt-2 mb-2 font-bold tracking-wide text-green-300 text-md">
                     Ballet/Tap
                   </h2>
                   <a href="">
-                    <h2 class="mb-4 font-bold text-gray-700 hover:text-blue-900 md:text-md lg:text-xl">
+                    <h2 class="mb-4 font-medium text-gray-700 hover:text-blue-900 text-sm md:text-lg max-w-md">
                       Seven leason on fitness Lorem <br class="block" />
                       Lorem ipsum dolor sit.dolor sit.
                     </h2>
                   </a>
 
-                  <p class="mb-3 leading-relaxed">
+                  <p class="mb-3 leading-relaxed text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Eaque, sed. Lorem ipsum.
                   </p>
@@ -999,17 +1001,17 @@
                     alt="blog" />
                 </div>
                 <div class="p-4">
-                  <h2 class="mt-2 mb-2 font-bold tracking-wide text-gray-800 text-pink-300 text-md">
+                  <h2 class="mt-2 mb-2 font-bold  tracking-wide  text-pink-300 text-md">
                     Ballet/Tap
                   </h2>
                   <a href="">
-                    <h2 class="mb-4 font-bold text-gray-700 hover:text-blue-900 text-md lg:text-xl">
+                    <h2 class="mb-4 font-bold text-gray-700 hover:text-blue-900 text-sm md:text-lg max-w-md">
                       Seven leason on fitness Lorem <br class="block" />
                       Lorem ipsum dolor sit.dolor sit.
                     </h2>
                   </a>
 
-                  <p class="mb-3 leading-relaxed">
+                  <p class="mb-3 leading-relaxed text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Eaque, sed. Lorem ipsum.
                   </p>
@@ -1036,17 +1038,17 @@
                     alt="blog" />
                 </div>
                 <div class="p-4">
-                  <h2 class="mt-2 mb-2 font-bold tracking-wide text-gray-800 text-green-300 text-md">
+                  <h2 class="mt-2 mb-2 font-bold tracking-wide  text-green-300 text-md">
                     Ballet/Tap
                   </h2>
                   <a href="">
-                    <h2 class="mb-4 font-bold text-gray-700 hover:text-blue-900 text-md lg:text-xl">
+                    <h2 class="mb-4 font-bold text-gray-700 hover:text-blue-900 text-sm md:text-lg max-w-md">
                       Seven leason on fitness Lorem <br class="block" />
                       Lorem ipsum dolor sit.dolor sit.
                     </h2>
                   </a>
 
-                  <p class="mb-3 leading-relaxed">
+                  <p class="mb-3 leading-relaxed text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Eaque, sed. Lorem ipsum.
                   </p>
@@ -1068,7 +1070,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contact">
     <div class="bg-slate-50">
       <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="grid row-gap-10 mx-5 mb-8 lg:grid-cols-6">
