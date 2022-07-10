@@ -79,7 +79,7 @@
       <div id="navbar-collapse" class="flex-col hidden mt-3 md:flex-row md:ml-auto md:mt-0 md:hidden">
         <div class="relative mr-3 text-gray-700 hover:text-gray-900" x-data="{ open: false }">
           <a href="#" @click="open = true" style="text-transform: inherit"
-            class=" items-center justify-between block px-4 py-2 text-sm hover:bg-gray-200">
+            class="flex items-center justify-between  px-4 py-2 text-sm hover:bg-gray-200">
             Classes
             <svg class="h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -88,10 +88,10 @@
           </a>
           <ul class="right-0 mt-2 bg-white border shadow-lg" x-show="open" @click.away="open = false">
             <li class="p-2 text-gray-700 bg-gray-200" x-data="{ open: false }">
-              <a href="private.html" class="">Pravate </a>
+              <a href="#" class="">Pravate </a>
             </li>
             <li class="p-2 text-gray-700 bg-gray-200" x-data="{ open: false }">
-              <a href="group.html">Group </a>
+              <a href="#">Group </a>
             </li>
           </ul>
         </div>
@@ -116,7 +116,7 @@
         <div class="mx-10 mt-10 lg:mt-20">
           <h1
             class="font-sans text-2xl font-extrabold leading-none tracking-tight text-center text-white md:text-3xl lg:text-4xl">
-            Private Class
+            Pravate Class
           </h1>
 
           <p
@@ -128,10 +128,9 @@
       </div>
     </div>
   </header>
-  <!--======== find a classs section=============-->
-  <section class="container text-gray-600 body-font">
+  <section class="text-gray-600 body-font">
     <div class=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div class="flex flex-row md:justify-between justify-center gap-4  w-full mb-20">
+      <div class="flex flex-row justify-around gap-10  w-full mb-20">
 
 
         <h2 class="font-sans text-xl md:text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl">
@@ -154,14 +153,14 @@
       </div>
 
 
-      <div class="flex flex-col justify-center md:items-center  flex-wrap -m-4">
+      <div class="flex flex-col  justify-center items-center flex-wrap -m-4">
         <!--=====class  post 1 ===========-->
-        <div class="p-4 w-full md:w-[60rem] shadow-2xl">
+        <div class="p-4 lg:w-[60rem] shadow-2xl">
           <div class="h-full  flex sm:flex-row flex-col items-center sm:justify-start  justify-center  sm:text-left">
             <img alt="blog1"
-              class="flex-shrink-0  rounded-lg   md:w-[24rem] md:h-[18rem] object-cover object-center sm:mb-0 mb-4"
+              class="flex-shrink-0  rounded-lg  w-[24rem] h-[18rem] object-cover object-center sm:mb-0 mb-4"
               src="https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE1fHxmaXRuZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
-            <div class="flex-grow   md:w-[24rem] md:h-[18rem] sm:pl-8">
+            <div class="flex-grow sm:pl-8">
               <div class="flex justify-between">
                 <div class="inline-flex gap-4">
                   <p class="px-2 text-gray-600 bg-purple-200">
@@ -198,7 +197,7 @@
           </div>
         </div>
         <!--======class post 2 =========-->
-        <div class="p-4 w-full md:w-[60rem] shadow-2xl">
+        <div class="p-4 lg:w-[60rem] shadow-2xl">
           <div class="h-full  flex sm:flex-row flex-col items-center sm:justify-start justify-center  sm:text-left">
             <img alt="blog1"
               class="flex-shrink-0  rounded-lg  w-[24rem] h-[18rem] object-cover object-center sm:mb-0 mb-4"
@@ -240,7 +239,7 @@
           </div>
         </div>
         <!--======class post 3 =========-->
-        <div class="p-4 w-full md:w-[60rem] shadow-2xl">
+        <div class="p-4 lg:w-[60rem] shadow-2xl">
           <div class="h-full  flex sm:flex-row flex-col items-center sm:justify-start justify-center  sm:text-left">
             <img alt="blog1"
               class="flex-shrink-0  rounded-lg  w-[24rem] h-[18rem] object-cover object-center sm:mb-0 mb-4"
@@ -282,7 +281,7 @@
           </div>
         </div>
         <!--======= class post 4 ======= -->
-        <div class="p-4 w-full md:w-[60rem] shadow-2xl">
+        <div class="p-4 lg:w-[60rem] shadow-2xl">
           <div class="h-full  flex sm:flex-row flex-col items-center sm:justify-start justify-center  sm:text-left">
             <img alt="blog1"
               class="flex-shrink-0  rounded-lg  w-[24rem] h-[18rem] object-cover object-center sm:mb-0 mb-4"
@@ -324,7 +323,7 @@
           </div>
         </div>
         <!--======= class post 5 ======= -->
-        <div class="p-4 w-full md:w-[60rem] shadow-2xl">
+        <div class="p-4 lg:w-[60rem] shadow-2xl">
           <div class="h-full  flex sm:flex-row flex-col items-center sm:justify-start justify-center  sm:text-left">
             <img alt="blog1"
               class="flex-shrink-0  rounded-lg  w-[24rem] h-[18rem] object-cover object-center sm:mb-0 mb-4"
@@ -366,7 +365,7 @@
           </div>
         </div>
         <!--======= blog post 6 ======= -->
-        <div class="p-4 w-full md:w-[60rem] shadow-2xl">
+        <div class="p-4 lg:w-[60rem] shadow-2xl">
           <div class="h-full  flex sm:flex-row flex-col items-center sm:justify-start justify-center  sm:text-left">
             <img alt="blog1"
               class="flex-shrink-0  rounded-lg  w-[24rem]  h-[18rem] object-cover object-center sm:mb-0 mb-4"
